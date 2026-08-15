@@ -10,7 +10,6 @@ import { OrderBook } from "@/components/dex/OrderBook";
 import { OrderForm } from "@/components/dex/OrderForm";
 import { FooterTicker } from "@/components/dex/FooterTicker";
 import { PositionsPanel } from "@/components/dex/PositionsPanel";
-import { AccountPanel } from "@/components/dex/AccountPanel";
 
 
 export const Route = createFileRoute("/")({
@@ -62,9 +61,6 @@ function Index() {
         <div className="flex h-[340px] shrink-0 gap-[5px]">
           <div className="flex min-w-0 flex-1 overflow-hidden rounded-2xl shadow-[var(--shadow-panel)]">
             <PositionsPanel />
-          </div>
-          <div className="overflow-hidden rounded-2xl shadow-[var(--shadow-panel)]">
-            <AccountPanel />
           </div>
         </div>
         <div className="shrink-0 overflow-hidden rounded-2xl shadow-[var(--shadow-panel)]">
