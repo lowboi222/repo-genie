@@ -58,7 +58,7 @@ function Index() {
             <OrderForm />
           </div>
         </div>
-        <div className="flex h-[340px] shrink-0 gap-[5px]">
+        <div className="flex h-[340px] w-[calc(100%_-_285px)] shrink-0 gap-[5px]">
           <div className="flex min-w-0 flex-1 overflow-hidden rounded-2xl shadow-[var(--shadow-panel)]">
             <PositionsPanel />
           </div>
