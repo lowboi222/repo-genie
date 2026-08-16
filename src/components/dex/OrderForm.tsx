@@ -181,29 +181,6 @@ export function OrderForm() {
           </div>
         </div>
 
-        <div className="mt-5 space-y-3 text-[14px]">
-          {[
-            ["Liq.Price", "--", "Liq.Price", "--"],
-            ["Margin", "0.00", "Margin", "0.00"],
-          ].map(([l1, v1, l2, v2]) => (
-            <div key={l1 + v1 + l2} className="flex justify-between">
-              <span className="text-muted-foreground">
-                {l1} <span className="tabular-nums tracking-tight text-foreground">{v1}</span>
-              </span>
-              <span className="text-muted-foreground">
-                {l2} <span className="tabular-nums tracking-tight text-foreground">{v2}</span>
-              </span>
-            </div>
-          ))}
-          <div className="flex justify-between">
-            <span className="text-muted-foreground">
-              Max <span className="tabular-nums tracking-tight text-foreground">0.00 USDT</span>
-            </span>
-            <span className="text-muted-foreground">
-              Max <span className="tabular-nums tracking-tight text-foreground">0.00 USDT</span>
-            </span>
-          </div>
-        </div>
       </div>
     </section>
   );
