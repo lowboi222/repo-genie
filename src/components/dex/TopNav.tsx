@@ -71,7 +71,7 @@ export function TopNav() {
         </button>
 
         <Dialog open={notifOpen} onOpenChange={setNotifOpen}>
-          <DialogContent className="max-w-[560px] gap-0 overflow-hidden rounded-3xl border-border bg-card p-0 shadow-[0_24px_60px_oklch(0.4_0.04_60_/_0.2)]">
+          <DialogContent className="max-w-[560px] gap-0 overflow-hidden rounded-3xl border-border bg-panel p-0 text-foreground shadow-[0_24px_60px_oklch(0.4_0.04_60_/_0.2)]">
             <NotificationsPanel />
           </DialogContent>
         </Dialog>
