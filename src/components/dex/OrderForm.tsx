@@ -29,7 +29,7 @@ export function OrderForm() {
       <div className="grid grid-cols-3 border-b border-border text-[15.5px]">
         {tab("market", "Market")}
         {tab("limit", "Limit")}
-        {tab("ladder", "Ladder Order")}
+        {tab("ladder", "Ladder")}
       </div>
 
       <div className="flex items-center gap-2 px-4 py-3 text-[14px]">
@@ -155,14 +155,10 @@ export function OrderForm() {
             </div>
           )}
 
-          <label className="flex items-center gap-2">
-            <span className="h-4 w-4 rounded-sm border border-border bg-panel" />
-            <span className="underline decoration-dotted underline-offset-4">Hidden Order</span>
-          </label>
           <div className="flex items-center justify-between">
             <label className="flex items-center gap-2">
               <span className="h-4 w-4 rounded-sm border border-border bg-panel" />
-              <span className="underline decoration-dotted underline-offset-4">Reduce-Only</span>
+              <span className="underline decoration-dotted underline-offset-4">Post Only</span>
             </label>
             <button className="flex items-center gap-1 text-muted-foreground">
               GTC <ChevronDown className="h-3.5 w-3.5" />
