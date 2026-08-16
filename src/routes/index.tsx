@@ -63,7 +63,7 @@ function Index() {
             <PositionsPanel />
           </div>
         </div>
-        <div className="shrink-0 overflow-hidden rounded-2xl shadow-[var(--shadow-panel)]">
+        <div className="fixed bottom-0 left-0 right-0 z-30 overflow-hidden border-t border-border bg-background shadow-[var(--shadow-panel)]">
           <FooterTicker />
         </div>
       </div>
