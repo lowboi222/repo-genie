@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import { Search, Star } from "lucide-react";
 
 const tabs = ["Favorites", "Futures", "Spot", "Prediction"];
@@ -16,6 +17,10 @@ const rows = [
 ];
 
 export function MarketSelector({ onClose }: { onClose: () => void }) {
+  const listRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    listRef.current?.focus();
+  }, []);
   return (
     <>
       <div className="fixed inset-0 z-40" onClick={onClose} />
